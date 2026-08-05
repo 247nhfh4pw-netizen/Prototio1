@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBAN STYLE | Ropa & Tenis</title>
+    <style>
+        /* Estilos Generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Encabezado y Navegación */
+        header {
+            background-color: #111;
+            color: #fff;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        header .logo span {
+            color: #ff4757;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff4757;
+        }
+
+        /* Banner Principal */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            background-color: #ff4757;
+            color: #fff;
+            padding: 0.8rem 1.8rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e84118;
+        }
+
+        /* Catálogo de Productos */
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .grid-productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-info {
+            padding: 1.2rem;
+            text-align: center;
+        }
+
+        .card-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-info .precio {
+            color: #ff4757;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .btn-comprar {
+            display: block;
+            background-color: #111;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.6rem;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .btn-comprar:hover {
+            background-color: #ff4757;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #111;
+            color: #888;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">URBAN<span>STYLE</span></div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#tenis">Tenis</a>
+            <a href="#ropa">Ropa</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero" id="inicio">
+        <h1>Nueva Colección 2026</h1>
+        <p>Lo mejor en moda urbana y sneakers de edición limitada</p>
+        <a href="#tenis" class="btn">Ver Catálogo</a>
+    </section>
+
+    <!-- Sección Tenis -->
+    <main class="container" id="tenis">
+        <h2 class="section-title">Tenis Destacados</h2>
+        <div class="grid-productos">
+            
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Tenis Rojos">
+                <div class="card-info">
+                    <h3>Sneakers Red Sport</h3>
+                    <p class="precio">$129.99</p>
+                    <a href="https://wa.me/1234567890?text=Hola,%20me%20interesan%20los%20Sneakers%20Red%20Sport" class="btn-comprar" target="_blank">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=600&q=80" alt="Tenis Converse Style">
+                <div class="card-info">
+                    <h3>Urban Classic White</h3>
+                    <p class="precio">$89.99</p>
+                    <a href="https://wa.me/1234567890?text=Hola,%20me%20interesan%20los%20Urban%20Classic%20White" class="btn-comprar" target="_blank">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=600&q=80" alt="Tenis Modernos">
+                <div class="card-info">
+                    <h3>Air Runner Blue</h3>
+                    <p class="precio">$149.99</p>
+                    <a href="https://wa.me/1234567890?text=Hola,%20me%20interesan%20los%20Air%20Runner%20Blue" class="btn-comprar" target="_blank">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Sección Ropa -->
+    <main class="container" id="ropa">
+        <h2 class="section-title">Ropa Urbana</h2>
+        <div class="grid-productos">
+            
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80" alt="Playera Blanca">
+                <div class="card-info">
+                    <h3>Playera Minimalist</h3>
+                    <p class="precio">$35.00</p>
+                    <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20la%20Playera%20Minimalist" class="btn-comprar" target="_blank">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80" alt="Sudadera">
+                <div class="card-info">
+                    <h3>Sudadera Oversize Hoodie</h3>
+                    <p class="precio">$65.00</p>
+                    <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20la%20Sudadera%20Oversize" class="btn-comprar" target="_blank">Pedir por WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer id="contacto">
+        <p>&copy; 2026 URBAN STYLE. Todos los derechos reservados.</p>
+        <p>Envíos a todo el país | Contáctanos vía WhatsApp para compras directas</p>
+    </footer>
+
+</body>
+</html>
